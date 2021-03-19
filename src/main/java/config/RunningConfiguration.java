@@ -1,8 +1,11 @@
+package config;
+
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:${where}.properties"
+        "classpath:${env}.properties"
 })
+
 public interface RunningConfiguration extends Config {
 
     @Key("browser.name")
